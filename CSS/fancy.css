@@ -1,0 +1,191 @@
+
+
+
+
+section {
+
+  
+    background: linear-gradient(to bottom, #cc8cd4, #fae952);
+}
+
+
+
+
+.box .square {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 45px 145px rgb(241, 151, 151);  /*equal white box-shadow can give the feel of light leaking out from all edges due to it's transatory bleed*/
+    border: 1px solid rgba(226, 117, 184, 0.17);
+    border-right: 1px solid rgb(198, 202, 193, 0.2);
+    border-bottom: 1px solid rgba(172, 125, 24, 0.2);
+    border-radius: 12px;
+    animation: animate 150s linear infinite;
+    animation: animate 10s cubic-bezier(0.1, 0.6, 0.6, 4) infinite; /*now the optimizastion of the real world shines through, we keep them high in the middle and slow them down towards the edge*/
+    animation-delay: calc(-1s * var(--i));
+
+}
+ @keyframes animate 
+ {
+     0%, 100%
+  {
+      transform: translate(-40px);
+  }
+  50%
+  {
+      transform: translate(40px);
+  }
+}
+
+.box .square:nth-child(1)
+{
+    top: 170px;
+    right: 20px;
+    width: 100px;
+    height: 130px;
+  }
+
+
+
+
+.box .square:nth-child(2)
+{
+    top: 300px;
+    left: 120px;
+    width: 100px;
+    height: 130px;
+  
+    z-index: 2;
+}
+
+
+.box .square:nth-child(3)
+{
+  bottom: 13px;
+  
+ 
+    width: 380px;
+    height: 280px;
+    z-index: 1112;
+    background-color: rgba(138, 204, 204, 0.26);
+}
+
+
+.box .square:nth-child(4)
+{
+  bottom: -80px;
+ left: 100px;
+ 
+    width: 150px;
+    height: 50px;
+
+}
+
+
+.box .square:nth-child(5)
+{
+top: -140px;
+ left: 140px;
+ 
+    width: 180px;
+    height: 80px;
+    background-color: cyan;
+    z-index: 10000;
+
+}
+
+
+.box .square:nth-child(6)
+{
+    top: -70px;
+    left: 250px;
+    
+       width: 310px;
+       height: 30px;
+       background: rgba(70, 14, 51, 0.301);
+       border-radius: 6px;
+     
+       position:absolute;
+       overflow: hidden;
+
+}
+
+
+
+.box .square:nth-child(7)
+{
+    top: 603px;
+ left: 70px;
+ 
+    width: 320px;
+    height: 120px;
+    background: rgba(226, 87, 180, 0.301);
+    border-radius: 6px;
+
+}
+
+
+.box .square:nth-child(8)
+{
+    top: 603px;
+ right: 10px;
+ 
+    width: 200px;
+    height: 300px;
+    background: rgba(109, 179, 226, 0.301);
+    border-radius: 6px;
+    margin-right: 77px;
+
+}
+
+
+
+
+.box .square:nth-child(9)
+{
+   top: 603px;
+ right: 70px;
+ 
+    width: 100px;
+    height: 50px;
+    background: rgba(202, 63, 156, 0.301);
+    border-radius: 6px;
+    z-index: 1;
+
+}
+
+
+
+.box .square:nth-child(10)
+{
+
+ top: 203px;
+ right: 20px;
+    width: 105px;
+    height: 315px;
+    background: rgba(70, 14, 51, 0.301);
+    border-radius: 6px;
+    z-index: 1;
+
+}
+
+
+
+
+
+.box .square:nth-child(9) {
+    top: 100px;
+    right: 70px;
+    width: 130px;
+    height: 50px;
+    background: #ca30d74d;
+    border-radius: 6px;
+    z-index: 1;
+  }
+
+
+
+
+
+
+
+

@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+   /* border: #ebebeb solid; */ 
+}
+
+
+
+body {
+    padding: 20px 40px;
+    font-family: sans-serif;
+    background: #928a88;
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 10vh;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+  
+}
+
+form {
+    padding: 2em;
+    background: rgba(230, 89, 222, 0.479);
+    border-radius: 1rem;
+}
+
+input {
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background: rgb(0, 0, 0);
+    border: none;
+    width: 200px;
+    padding: 1rem;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    margin: 0 auto;
+
+    margin-top: 2vh;
+  
+    margin-left: 0;
+    margin-right: 0;
+    display:block;
+    margin: 0 auto;
+    margin-top: 5vh;
+
+  
+  
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.form-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+
+input[id=firstName] {
+    border: 4px solid #8842d5;
+    border-radius: 5px;  
+    border-radius: 50%;
+ 
+}
+
+/* we have styled the input with id=firstName */
+
+input[id=lastName] {
+    border: 4px solid #8842d5;
+    border-radius: 5px;  
+    border-radius: 50%;
+ 
+}
+
+
+
+
+html {
+
+    height: 100%;
+    overflow: hidden;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+h1 {
+
+    font-family: 'Kumbh Sans', sans-serif;
+
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Prompt', sans-serif;
+
+    font-family: 'PT Sans Caption', sans-serif;
+
+
+    font-size: min(max(20px, 5vw), 160px);
+    
+    
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px #ec64bf;
+}
+
+a {
+   
+    color: rgb(182, 107, 214);
+    border:  20px 10px 20px #fff;
+    font-size: 2vw;
+
+
+}
+
+.slide {
+
+    position: relative;
+    padding: 25% 10%;
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 45px 50px rgba(240, 24, 204, 0.7); /*this is both the spread and the dimensions of our shadow
+    if we write 0 100px 100px the shadow dissapears, the second number is important*/
+    transform-style: inherit;
+}
+
+.slide::before  /*before what?*/{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.slide, slide:before {
+    background: 50% 50% / cover;
+}
+
+#intro{
+
+    background-image: url("../images/speaking\ chat\ rap\ hip\ hop\ music\ production\ homies.jpg");
+    z-index: 2; /*changes the fade of the shadow slightly softer, positioning*/
+}
+#slide1:before {
+    background-image: url("../images/DSC_14991011_1.jpg");
+ transform: translateZ(-1px) scale(2); /*Z axis one of the three axises, top, the -1px has to do with the picture dimensions, scale(2) --also dimensions*/
+ background-size:contain;
+
+ /*background-size:cover*/
+
+ box-shadow: 2 2 2px 2px rgb(206, 61, 61);
+    
+}
+
+#slide2 {
+    background-image: url("../images/speaking\ chat\ rap\ hip\ hop\ music\ production\ homies.jpg");
+    z-index: 2;
+}
+
+/*with the different z-indexes we affect all the translations and now we see they move differently with their axsises, plural of axis is axises
+the z-inex is on both slide1 and slide 2, on slide one we have :before, but slide1 has transform so it changes it's path on the z axis, the axises are different between the slides*/
+
+
+#slide3 {
+
+    background-color: brown;}
+
+    .thankYou {
+
+        background-color: rgb(224, 237, 255);
+        text-align: center;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        display: none;
+        margin: 0 auto;
+        margin-top: 5vh;
+        vertical-align: middle;
+
+    }
+
+
+
+    .thankYou {
+
+        background-color: rgb(224, 237, 255);
+        text-align: center;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        display: none;
+        margin: 0 auto;
+        margin-top: 5vh;
+        vertical-align: middle;
+        animation: fadeOut 420s;
+        animation-iteration-count: 1;
+    
+
+        
+
+    }
+    @keyframes fadeOut {
+
+      0% {
+           opacity: 100%;
+        }
+        1.4% {
+            opacity: 0%;
+        }
+
+        100% {
+            opacity: 0%;
+        }
+    }
+    
+
+
+    p {
+
+       vertical-align: middle;
+       margin-top: auto;
+       margin-bottom: 50%;
+      line-height: 110px;
+      width: 100%;
+      border-color: darkkhaki;
+      text-shadow:  2px 2px 4px  rgb(228, 46, 46);
+    }
